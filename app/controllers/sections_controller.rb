@@ -16,7 +16,7 @@ class SectionsController < ApplicationController
     @students = JSON.parse(@response)
   end
   
-  def all
+  def all_sections
     @am_students = JSON.parse(open("http://codemountain.com/api/students/am.json").read)
     @pm_students = JSON.parse(open("http://codemountain.com/api/students/pm.json").read)
     @rfd_students = JSON.parse(open("http://codemountain.com/api/students/rfd.json").read)

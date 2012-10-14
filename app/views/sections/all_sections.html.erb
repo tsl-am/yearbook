@@ -1,0 +1,10 @@
+<h1>TSL Dev Students</h1>
+
+<ul>
+  <% @students.each do |student| %>
+  <li class='frame'>
+	  <img class='thumbnail' src='http://codemountain.com<%= student["student"]["avatar_url"] %>'>
+	  <p class='name'><%= student["student"]["name"] %></p>
+	</li>
+	<% end %>
+</ul>
