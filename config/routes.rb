@@ -2,6 +2,8 @@ Yearbook::Application.routes.draw do
   
   get('/am', { :controller => 'Sections', :action => 'am_section' })
   
+  get('/pm', { :controller => 'Sections', :action => 'pm_section' })
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
