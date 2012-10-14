@@ -1,16 +1,10 @@
 <h1>TSL AM Dev Students</h1>
 
-<h2>Raw response class</h2>
-<p><%= @response.class %></p>
-<h2>Raw response length</h2>
-<p><%= @response.length %></p>
-<h2>Parsed data class</h2>
-<p><%= @parsed_data.class %></p>
-<h2>Parsed data length</h2>
-<p><%= @parsed_data.length %></p>
-<h2>Parsed data first element class</h2>
-<p><%= @parsed_data.first.class %></p>
-<h2>Parsed data first element value</h2>
-<p><%= @parsed_data.first.inspect %></p>
-<h2>Next level keys</h2>
-<p><%= @parsed_data.first["student"].keys %></p>
+<ul>
+  <% @students.each do |student| %>
+  <li>
+	  <img src='http://codemountain.com<%= student["student"]["avatar_url"] %>'>
+	  <p><%= student["student"]["name"] %></p>
+	</li>
+	<% end %>
+</ul>
