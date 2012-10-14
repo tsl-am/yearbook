@@ -26,6 +26,7 @@ li {
 
 .name {
 	color: #666666;
+	display: none;
 	font-size: large;
 	margin-top: 10px;
 	text-align: center;
