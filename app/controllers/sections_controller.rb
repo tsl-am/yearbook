@@ -10,4 +10,9 @@ class SectionsController < ApplicationController
     @response = open("http://codemountain.com/api/students/pm.json").read
     @students = JSON.parse(@response)
   end
+  
+  def rfd_section    
+    @response = open("http://codemountain.com/api/students/rfd.json").read
+    @students = JSON.parse(@response)
+  end
 end
