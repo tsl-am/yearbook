@@ -6,6 +6,8 @@ Yearbook::Application.routes.draw do
   
   get('/rfd', { :controller => 'Sections', :action => 'rfd_section' })
   
+  get('/all', { :controller => 'Sections', :action => 'all_sections' })
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
